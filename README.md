@@ -30,15 +30,17 @@ The CLI supports Claude Code, Codex, Cursor, Gemini, OpenCode, GitHub Copilot, W
 
 ```text
 artifact-design/
-├── SKILL.md
-└── references/
-    ├── claude-artifacts.md
-    └── publishing.md
+└── skills/
+    └── artifact-design/
+        ├── SKILL.md
+        └── references/
+            ├── claude-artifacts.md
+            └── publishing.md
 ```
 
-- `SKILL.md` contains the portable design workflow.
-- `references/publishing.md` selects and verifies here.now or Vercel deployment.
-- `references/claude-artifacts.md` contains only Claude Artifact runtime constraints.
+- `skills/artifact-design/SKILL.md` contains the portable design workflow.
+- `skills/artifact-design/references/publishing.md` selects and verifies here.now or Vercel deployment.
+- `skills/artifact-design/references/claude-artifacts.md` contains only Claude Artifact runtime constraints.
 
 ## Publishing on skills.sh
 
@@ -47,7 +49,7 @@ skills.sh indexes skills from public Git repositories; there is no separate skil
 1. Run `npx skills add perminder-klair/artifact-design --skill artifact-design` to confirm discovery and installation.
 2. Open `https://skills.sh/perminder-klair/artifact-design/artifact-design` after the directory indexes the repository.
 
-The root-level `SKILL.md` is intentionally valid as a standalone skill repository. Keep `name: artifact-design` stable so updates resolve to the same installed skill.
+Keep `name: artifact-design` stable so updates resolve to the same installed skill.
 
 ## Publishing generated artifacts
 
