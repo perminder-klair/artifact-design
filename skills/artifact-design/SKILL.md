@@ -17,6 +17,7 @@ Before designing, determine the output contract from the request and available t
 - Read the project's instruction files and design system before making choices. Check applicable files such as `AGENTS.md`, `CLAUDE.md`, tokens, themes, component libraries, and existing styles.
 - Treat runtime-specific constraints as adapters, not universal rules. Read `references/claude-artifacts.md` only when publishing through Claude Artifacts.
 - Read `references/publishing.md` when the user asks to publish, host, deploy, share, or provide a live URL.
+- Use the current agent's native file, preview, browser, and deployment tools; never require a Claude-only tool for the portable path.
 
 Precedence: the user's words, the project's established system, the requested output format, then this skill's defaults.
 
